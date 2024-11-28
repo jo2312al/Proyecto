@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar" id="responsive-menu">
+    <div class="top-bar-left">
+      <div class="grid-x align-middle"> 
+        <div class="cell small-2 medium-2">
+          <a href="inicio.html" class="logo">
+            <img src="img/logo.svg" alt="Logo" class="logo"> 
+          </a>
+        </div>
+        <div class="cell small-10 medium-shrink search-container">
+                <img src="img/search-line.svg" alt="Búsqueda" class="search-icon"> 
+                <input type="search" id="search-input" placeholder="Search" class="search-input"> 
+        </div>
+        <div id="search-results" class="grid-x align-center search-results is-hidden floating-search">
+          <div class="cell small-12 medium-9 large-9">
+              <div class="grid-x">
+            <div class="cell large-6 medium-6 small-6">
+              <h3>Resultados</h3>
+              <div class="result-item">
+                <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                      </div>
+                      <div class="cell small-4">
+                          <p class="song-titulo">ALV</p>
+                          <p class="artist-name-result">Arcangel</p>
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/amor.webp" alt="Angels like you" class="song-image">
+                      </div>
+                      <div class="cell auto">
+                          <p class="song-titulo">Amor</p>
+                          <p class="artist-name-result">Danny Ocean</p>
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="result-item">
+                  <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/dios.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Dios te cuide</p>
+                            <p class="artist-name-result">Manuel Turizo</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/llore.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Lloré</p>
+                            <p class="artist-name-result">Thalia</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/nueva.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Nueva Vida</p>
+                            <p class="artist-name-result">Peso Pluma</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Ya pedo quien sabe</p>
+                            <p class="artist-name-result">Grupo Frontera</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <!-- Repetir para más resultados -->
+          </div>
+                  <div class="cell auto artists-section">
+                    <h3>Artistas</h3>
+                    <div class="grid-x grid-margin-x">
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                            <img src="./img/artistas/billie.webp" class="rounded-circle artist-image" alt="Billie Eilish">
+                            <p class="artist-name">Billie Eilish</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/kanye.webp" class="rounded-circle artist-image" alt="Kanye West">
+                        <p class="artist-name">Kanye West</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/bruno.webp" class="rounded-circle artist-image" alt="Bruno Mars">
+                        <p class="artist-name">Bruno Mars</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/katy.webp" class="rounded-circle artist-image" alt="Katy Perry">
+                        <p class="artist-name">Katy Perry</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/lenny.webp" class="rounded-circle artist-image" alt="Lenny Kravitz">
+                        <p class="artist-name">Lenny Kravitz</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/charlie.webp" class="rounded-circle artist-image" alt="Charlie Puth">
+                        <p class="artist-name">Charlie Puth</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>      
+        </div>
+    </div>
+  </div>
+  <div class="grid-x container">
+    <div class="cell medium-2 large-2 sidebar hide-for-small-only">
+        <div class="menu-header">
+          <span class="span">Menú</span>
+        </div>
+        <!-- Contenido del menú lateral -->
+        <ul>
+          <li>
+            <img src="img/icon_perfil.svg" alt="Icono de Perfil" class="menu-item-icon">
+            <a href="perfil.html" class="listado-menu">Perfil</a>
+          </li>
+          <li>
+            <img src="img/icon_libreria.svg" alt="Icono de Librería" class="menu-item-icon">
+            <a href="libreria.html" class="listado-menu">Librería</a>
+          </li>
+          <li>
+            <img src="img/icon_playlist.svg" alt="Icono de Playlist" class="menu-item-icon">
+            <a href="playlist.html" class="listado-menu">Playlist</a>
+          </li>
+          <li>
+            <img src="img/icon_historial.svg" alt="Icono de Historial" class="menu-item-icon">
+            <a href="historial.html" class="listado-menu">Historial</a>
+          </li>
+        </ul>
+      </div>
+    <div class="cell small-12 medium-auto large-10 ">
+        <div class="grid-x">
+            <h4 class="">Álbumes</h4>
+            <div class="grid-x">
+              <div class="cell small-6 medium-4 large-3">
+                <div class="card position-relative">
+                  <a href="album.html">
+                  <img src="./img/albumes/album.webp" class="img-fluid" alt="$AD BOYS 4 LIFE II">
+                  <p class="album-text">$AD BOYS 4 LIFE II</p>
+                  </a>
+                </div>
+              </div>
+              <div class="cell small-6 medium-4 large-3">
+                <div class="card position-relative">
+                  <a href="album.html">
+                  <img src="./img/albumes/exodo.webp" class="img-fluid" alt="Álbum 2">
+                  <p class="album-text">ÉXODO</p>
+                  </a>
+                </div>
+              </div>
+              <div class="cell small-6 medium-4 large-3">
+                <div class="card position-relative">
+                  <a href="album.html">
+                  <img src="./img/albumes/fantasmas.webp" class="img-fluid" alt="Álbum 3">
+                  <p class="album-text">FANTASMAS</p>
+                  </a>
+                </div>
+              </div>
+              <div class="cell small-6 medium-4 large-3">
+                <div class="card position-relative">
+                  <a href="album.html">
+                  <img src="./img/albumes/damn.webp" class="img-fluid" alt="Álbum 4">
+                  <p class="album-text">DAMN.</p>
+                  </a>
+                </div>
+              </div>
+            </div> 
+        </div>
+        <!-- Artistas -->
+<h4 class="margin-top-3 margin-bottom-2 ">Artistas</h4>
+<div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+    <div class="cell text-center">
+        <a href="artista.html">
+          <img src="./img/artistas/kanye.webp" class="rounded-circle" alt="Kanye West">
+          <p class="artist-name">Kanye West</p>
+        </a>
+    </div>
+    <div class="cell text-center">
+        <a href="artista.html">
+            <img src="./img/artistas/katy.webp" class="rounded-circle">
+            <p class="artist-name">Katy Perry</p>
+        </a>
+    </div>
+    <div class="cell text-center">
+        <a href="artista.html">
+          <img src="./img/artistas/bruno.webp" class="rounded-circle" alt="Bruno Mars">
+          <p class="artist-name">Bruno Mars</p>
+        </a>
+    </div>
+    <div class="cell text-center">
+        <a href="artista.html">
+          <img src="./img/artistas/lenny.webp" class="rounded-circle" alt="Lenny Kravitz">
+          <p class="artist-name">Lenny Kravitz</p>
+        </a>
+    </div>
+    <div class="cell text-center">
+        <a href="artista.html">
+          <img src="./img/artistas/billie.webp" class="rounded-circle" alt="Billie Eilish">
+          <p class="artist-name">Billie Eilish</p>
+        </a>
+    </div>
+    <div class="cell text-center">
+        <a href="artista.html">
+          <img src="./img/artistas/charlie.webp" class="rounded-circle" alt="Charlie Puth">
+          <p class="artist-name">Charlie Puth</p>
+        </a>
+    </div>      
+</div>
+
+
+<!-- Géneros Populares -->
+<h4 class="margin-top-3 margin-bottom-2">Géneros populares</h4>
+<div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+  <div class="cell">
+    <div class="card">
+      <img src="./img/generos/regional.webp" class="card-image" alt="Regional mexicano">
+      <p class="text-overlay-genero text-center">Regional mexicano</p>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/generos/pop.webp" class="card-image" alt="Pop latino">
+      <p class="text-overlay-genero text-center">Pop latino</p>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/generos/trap.webp" class="card-image" alt="Trap latino">
+      <p class="text-overlay-genero text-center">Trap latino</p>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/generos/regueton.webp" class="card-image" alt="Reguetón">
+      <p class="text-overlay-genero text-center">Reguetón</p>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/generos/salsa.webp" class="card-image" alt="Salsa">
+      <p class="text-overlay-genero text-center">Salsa</p>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/generos/cumbia.webp" class="card-image" alt="Cumbia">
+      <p class="text-overlay-genero text-center">Cumbia</p>
+    </div>
+  </div>
+</div>
+
+<!-- Lanzamientos Recientes -->
+<h4 class="margin-top-3 margin-bottom-2">Lanzamientos recientes</h4>
+<div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+  <div class="cell">
+    <div class="card">
+      <img src="./img/lanzamientos/amor.webp" class="card-image" alt="Álbum Amor">
+      <div class="text-overlay-lanzamiento text-center">
+        <p class="album-name">Amor</p>
+        <p class="artist-name-lanzamiento">Danny Ocean</p>
+      </div>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/lanzamientos/alv.webp" class="card-image" alt="Álbum ALV">
+      <div class="text-overlay-lanzamiento text-center">
+        <p class="album-name">ALV</p>
+        <p class="artist-name-lanzamiento">Arcangel</p>
+      </div>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/lanzamientos/llore.webp" class="card-image" alt="Álbum Lloré">
+      <div class="text-overlay-lanzamiento text-center">
+        <p class="album-name">Lloré</p>
+        <p class="artist-name-lanzamiento">Thalia</p>
+      </div>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/lanzamientos/dios.webp" class="card-image" alt="Álbum Dios te cuide">
+      <div class="text-overlay-lanzamiento text-center">
+        <p class="album-name">Dios te cuide</p>
+        <p class="artist-name-lanzamiento">Manuel Turizo</p>
+      </div>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/lanzamientos/nueva.webp" class="card-image" alt="Álbum Nueva Vida">
+      <div class="text-overlay-lanzamiento text-center">
+        <p class="album-name">Nueva Vida</p>
+        <p class="artist-name-lanzamiento">Peso Pluma</p>
+      </div>
+    </div>
+  </div>
+  <div class="cell">
+    <div class="card">
+      <img src="./img/lanzamientos/pedo.webp" class="card-image" alt="Álbum Ya pedo quien sabe">
+      <div class="text-overlay-lanzamiento text-center">
+        <p class="album-name">Ya pedo quien sabe</p>
+        <p class="artist-name-lanzamiento">Grupo Frontera</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+
+
+</body>
+</html>

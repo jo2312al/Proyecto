@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear playlist</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar" id="responsive-menu">
+    <div class="top-bar-left">
+      <div class="grid-x align-middle"> 
+        <div class="cell small-2 medium-2">
+          <a href="inicio.html" class="logo">
+            <img src="img/logo.svg" alt="Logo" class="logo"> 
+          </a>
+        </div>
+        <div class="cell small-10 medium-shrink search-container">
+          <img src="img/search-line.svg" alt="Búsqueda" class="search-icon"> 
+          <input type="search" placeholder="Search" class="search-input"> 
+        </div>
+        <div id="search-results" class="grid-x align-center search-results is-hidden floating-search">
+         <div class="cell small-12 medium-9 large-9">
+             <div class="grid-x">
+           <div class="cell large-6 medium-6 small-6">
+             <h3>Resultados</h3>
+             <div class="result-item">
+               <a href="reproductor.html">
+                 <div class="grid-x grid-search">
+                     <div class="cell small-3 medium-4" style="align-content: center;">
+                         <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                     </div>
+                     <div class="cell small-4">
+                         <p class="song-titulo">ALV</p>
+                         <p class="artist-name-result">Arcangel</p>
+                     </div>
+                 </div>
+               </a>
+             </div>
+             <div class="result-item">
+               <a href="reproductor.html">
+                 <div class="grid-x grid-search">
+                     <div class="cell small-3 medium-4" style="align-content: center;">
+                         <img src="/img/lanzamientos/amor.webp" alt="Angels like you" class="song-image">
+                     </div>
+                     <div class="cell auto">
+                         <p class="song-titulo">Amor</p>
+                         <p class="artist-name-result">Danny Ocean</p>
+                     </div>
+                 </div>
+               </a>
+             </div>
+             <div class="result-item">
+                 <a href="reproductor.html">
+                 <div class="grid-x grid-search">
+                     <div class="cell small-3 medium-4" style="align-content: center;">
+                         <img src="/img/lanzamientos/dios.webp" alt="Angels like you" class="song-image">
+                       </div>
+                       <div class="cell auto">
+                           <p class="song-titulo">Dios te cuide</p>
+                           <p class="artist-name-result">Manuel Turizo</p>
+                       </div>
+                   </div>
+               </a>
+             </div>
+             <div class="result-item">
+               <a href="reproductor.html">
+                   <div class="grid-x grid-search">
+                       <div class="cell small-3 medium-4" style="align-content: center;">
+                           <img src="/img/lanzamientos/llore.webp" alt="Angels like you" class="song-image">
+                       </div>
+                       <div class="cell auto">
+                           <p class="song-titulo">Lloré</p>
+                           <p class="artist-name-result">Thalia</p>
+                       </div>
+                   </div>
+               </a>
+             </div>
+             <div class="result-item">
+               <a href="reproductor.html">
+                   <div class="grid-x grid-search">
+                       <div class="cell small-3 medium-4" style="align-content: center;">
+                           <img src="/img/lanzamientos/nueva.webp" alt="Angels like you" class="song-image">
+                       </div>
+                       <div class="cell auto">
+                           <p class="song-titulo">Nueva Vida</p>
+                           <p class="artist-name-result">Peso Pluma</p>
+                       </div>
+                   </div>
+               </a>
+             </div>
+             <div class="result-item">
+               <a href="reproductor.html">
+                   <div class="grid-x grid-search">
+                       <div class="cell small-3 medium-4" style="align-content: center;">
+                           <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                       </div>
+                       <div class="cell auto">
+                           <p class="song-titulo">Ya pedo quien sabe</p>
+                           <p class="artist-name-result">Grupo Frontera</p>
+                       </div>
+                   </div>
+               </a>
+             </div>
+             <!-- Repetir para más resultados -->
+         </div>
+                 <div class="cell auto artists-section">
+                   <h3>Artistas</h3>
+                   <div class="grid-x grid-margin-x">
+                     <div class="cell small-6 text-center">
+                       <a href="artista.html">
+                           <img src="./img/artistas/billie.webp" class="rounded-circle artist-image" alt="Billie Eilish">
+                           <p class="artist-name">Billie Eilish</p>
+                       </a>
+                     </div>
+                     <div class="cell small-6 text-center">
+                       <a href="artista.html">
+                       <img src="./img/artistas/kanye.webp" class="rounded-circle artist-image" alt="Kanye West">
+                       <p class="artist-name">Kanye West</p>
+                       </a>
+                     </div>
+                     <div class="cell small-6 text-center">
+                       <a href="artista.html">
+                       <img src="./img/artistas/bruno.webp" class="rounded-circle artist-image" alt="Bruno Mars">
+                       <p class="artist-name">Bruno Mars</p>
+                       </a>
+                     </div>
+                     <div class="cell small-6 text-center">
+                       <a href="artista.html">
+                       <img src="./img/artistas/katy.webp" class="rounded-circle artist-image" alt="Katy Perry">
+                       <p class="artist-name">Katy Perry</p>
+                       </a>
+                     </div>
+                     <div class="cell small-6 text-center">
+                       <a href="artista.html">
+                       <img src="./img/artistas/lenny.webp" class="rounded-circle artist-image" alt="Lenny Kravitz">
+                       <p class="artist-name">Lenny Kravitz</p>
+                       </a>
+                     </div>
+                     <div class="cell small-6 text-center">
+                       <a href="artista.html">
+                       <img src="./img/artistas/charlie.webp" class="rounded-circle artist-image" alt="Charlie Puth">
+                       <p class="artist-name">Charlie Puth</p>
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-x container">
+    <div class="cell small-2 medium-2 sidebar hide-for-small-only">
+      <div class="menu-header">
+        <span class="span">Menú</span>
+      </div>
+      <!-- Contenido del menú lateral -->
+      <ul>
+         <li>
+           <img src="img/icon_perfil.svg" alt="Icono de Perfil" class="menu-item-icon">
+           <a href="perfil.html" class="listado-menu">Perfil</a>
+         </li>
+         <li>
+           <img src="img/icon_libreria.svg" alt="Icono de Librería" class="menu-item-icon">
+           <a href="libreria.html" class="listado-menu">Librería</a>
+         </li>
+         <li>
+           <img src="img/icon_playlist.svg" alt="Icono de Playlist" class="menu-item-icon">
+           <a href="playlist.html" class="listado-menu">Playlist</a>
+         </li>
+         <li>
+           <img src="img/icon_historial.svg" alt="Icono de Historial" class="menu-item-icon">
+           <a href="historial.html" class="listado-menu">Historial</a>
+         </li>
+       </ul>
+    </div>
+    <div class="cell small-12 medium-auto large-10 ">
+      <div class="grid container video-player">
+      <div class="grid-x">
+        <div class="cell small-3 medium-3 large-3">
+        <div class="album-cover">
+            <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Imagen del álbum">
+        </div>
+      </div>
+
+        <div class="cell auto">
+            <h2 class="song-title">Hijo de la Luna</h2>
+            <p class="song-artist">Mecano</p>
+        </div>
+        <div class="cell small-4 medium-2 large-2">
+      <div class="icons">
+        <button id="boton-icono" class="boton-imagen">
+          <img id="icono" src="img/anadir.svg" alt="Icono 3" class="">
+        </button>
+      <button class="boton-imagen">
+        <img  src="img/quitar.svg" alt="Icono 2" class="" >
+      </button>
+      <button class="boton-imagen">
+        <img src="img/aleatorio.svg" alt="Icono 1" class="">
+      </button>
+      </div>
+    </div>
+  </div>
+    <div class="grid-x">
+      <div class="cell small-4 medium-4 large-4"></div>
+        <div class="cell small-4 medium-4 large-4">
+      <div class="controls">
+        <img src="img/anterior.svg" alt="Canción Anterior" class="control-icon">
+        <img src="img/play.svg" alt="Pausa" class="control-icon">
+        <img src="img/siguiente.svg" alt="Siguiente Canción" class="control-icon">
+      </div>
+    </div>
+  </div>
+      
+      <!-- Barra de progreso -->
+      
+    <div class="slider" data-slider data-initial-start="50" data-end="200">
+      <span class="slider-handle chingadera"  data-slider-handle role="slider" tabindex="1"></span>
+      <span class="slider-fill relleno-chingadera" data-slider-fill></span>
+      <input type="hidden">
+    </div>
+  </div>
+  <div class="cell auto show-for-small-only artista-container">
+    <div class="grid-x">
+      <div class="cell small-6">
+    <img src="img/playlist/ac18c52e32481b09ef370f11a2cc2dd7.webp" alt="Mecano" class="artista-foto">
+  </div>
+  <div class="cell auto">
+    <h1 class="h1-titulo-playlist"> Música para verano</h1>
+    <div class="grid-x">
+      <div class="cell small-3 medium-3 large-3">
+        <button class="boton-icono">
+          <img src="img/play-morado.svg" alt="" class="icono-reproductor">
+        </button>
+      </div>
+      <div class="cell auto"></div>
+      <div class="cell small-4 medium-4 large-4">
+        <button type="button" class="button small seguir-button">Seguir</button>
+      </div>
+    </div>
+      <div class="grid-x">
+        <div class="cell auto"></div>
+        <div class="cell small-4">
+          <button id="boton-icono" class="boton-imagen-playlist2">
+            <img id="icono" src="img/anadir.svg" alt="Icono 3" class="">
+          </button>
+          <button class="boton-imagen-playlist2">
+            <img  src="img/quitar.svg" alt="Icono 2" class="" >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="grid-x tendencia-conteiner">
+      <div class="cell small-12 medium-9 large-9 "><h1 class="h1-titulo"> Lista de reproducción</h1>
+      <div class="grid-x playlist">
+        <div class="cell small-1 medium-1 large-1 posicion">1 
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+          <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Canción Anterior" class="cover-tendencia">
+        </div>
+        <div class="cell small-4 medium-4 large-4">
+          <h2 class="h2-playlist">Hijo de la luna</h2>
+          <h3 class="h3-playlist">Mecano</h3>
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+          <div class="grid-x align-middle vertical">
+          <h2 class="h2-playlist-album vertical">Hijo de la luna</h2>
+        </div>
+        </div>
+        <div class="cell small-3 medium-3 large-3">
+          <div class="grid-x align-middle vertical">
+           <div class="cell auto">
+             <h3 class="h3-duracion">
+               5:30
+              </h3>
+            </div>
+            <div class="cell small-4 medium-4 large-4">
+              <button id="boton-icono" class="boton-añadir">
+              <img id="icono" src="img/anadir.svg" alt="Icono 3" >
+            </button>
+             </div>
+            </div>
+        </div>
+      </div>
+      <div class="grid-x playlist">
+        <div class="cell small-1 medium-1 large-1 posicion">2</div>
+        <div class="cell small-2 medium-2 large-2">
+           <img src="img/albumes/c/OIP.webp" alt="Canción 2" class="cover-tendencia">
+        </div>
+        <div class="cell small-4 medium-4 large-4">
+           <h2 class="h2-playlist">Signos</h2>
+           <h3 class="h3-playlist">Soda Stereo</h3>
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+           <div class="grid-x align-middle vertical">
+              <h2 class="h2-playlist-album vertical">Signos</h2>
+           </div>
+        </div>
+        <div class="cell small-3 medium-3 large-3">
+           <div class="grid-x align-middle vertical">
+              <div class="cell auto">
+                 <h3 class="h3-duracion">4:10</h3>
+              </div>
+              <div class="cell small-4 medium-4 large-4">
+                 <button id="boton-icono" class="boton-añadir">
+                    <img id="icono" src="img/anadir.svg" alt="Icono 2">
+                 </button>
+              </div>
+           </div>
+        </div>
+     </div>
+     
+     <div class="grid-x playlist">
+        <div class="cell small-1 medium-1 large-1 posicion">3</div>
+        <div class="cell small-2 medium-2 large-2">
+           <img src="img/albumes/c/1200x1200bf-60.webp" alt="Canción 3" class="cover-tendencia">
+        </div>
+        <div class="cell small-4 medium-4 large-4">
+           <h2 class="h2-playlist">Mar adentro</h2>
+           <h3 class="h3-playlist">Héroes del Silencio</h3>
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+           <div class="grid-x align-middle vertical">
+              <h2 class="h2-playlist-album vertical">Senderos de Traición</h2>
+           </div>
+        </div>
+        <div class="cell small-3 medium-3 large-3">
+           <div class="grid-x align-middle vertical">
+              <div class="cell auto">
+                 <h3 class="h3-duracion">5:15</h3>
+              </div>
+              <div class="cell small-4 medium-4 large-4">
+                 <button id="boton-icono" class="boton-añadir">
+                    <img id="icono" src="img/anadir.svg" alt="Icono 3">
+                 </button>
+              </div>
+           </div>
+        </div>
+     </div>
+     
+     <div class="grid-x playlist">
+        <div class="cell small-1 medium-1 large-1 posicion">4</div>
+        <div class="cell small-2 medium-2 large-2">
+           <img src="img/albumes/c/Cafe-Tacuba-Re.webp" alt="Canción 4" class="cover-tendencia">
+        </div>
+        <div class="cell small-4 medium-4 large-4">
+           <h2 class="h2-playlist">La Ingrata</h2>
+           <h3 class="h3-playlist">Café Tacvba</h3>
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+           <div class="grid-x align-middle vertical">
+              <h2 class="h2-playlist-album vertical">Re</h2>
+           </div>
+        </div>
+        <div class="cell small-3 medium-3 large-3">
+           <div class="grid-x align-middle vertical">
+              <div class="cell auto">
+                 <h3 class="h3-duracion">3:37</h3>
+              </div>
+              <div class="cell small-4 medium-4 large-4">
+                 <button id="boton-icono" class="boton-añadir">
+                    <img id="icono" src="img/anadir.svg" alt="Icono 4">
+                 </button>
+              </div>
+           </div>
+        </div>
+     </div>    
+     <div class="grid-x playlist">
+        <div class="cell small-1 medium-1 large-1 posicion">5</div>
+        <div class="cell small-2 medium-2 large-2">
+           <img src="img/albumes/c/R.webp" alt="Canción 6" class="cover-tendencia">
+        </div>
+        <div class="cell small-4 medium-4 large-4">
+           <h2 class="h2-playlist">Rosas</h2>
+           <h3 class="h3-playlist">La Oreja de Van Gogh</h3>
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+           <div class="grid-x align-middle vertical">
+              <h2 class="h2-playlist-album vertical">Lo Que te Conté Mientras te Hacías la Dormida</h2>
+           </div>
+        </div>
+        <div class="cell small-3 medium-3 large-3">
+           <div class="grid-x align-middle vertical">
+              <div class="cell auto">
+                 <h3 class="h3-duracion">4:00</h3>
+              </div>
+              <div class="cell small-4 medium-4 large-4">
+                 <button id="boton-icono" class="boton-añadir">
+                    <img id="icono" src="img/anadir.svg" alt="Icono 6">
+                 </button>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="grid-x playlist">
+      <div class="cell small-1 medium-1 large-1 posicion">12</div>
+      <div class="cell small-2 medium-2 large-2">
+         <img src="img/albumes/mecano_descanso-dominical.webp" alt="Canción 12" class="cover-tendencia">
+      </div>
+      <div class="cell small-4 medium-4 large-4">
+         <h2 class="h2-playlist">Mujer contra mujer</h2>
+         <h3 class="h3-playlist">Mecano</h3>
+      </div>
+      <div class="cell small-2 medium-2 large-2">
+         <div class="grid-x align-middle vertical">
+            <h2 class="h2-playlist-album vertical">Descanso Dominical</h2>
+         </div>
+      </div>
+      <div class="cell small-3 medium-3 large-3">
+         <div class="grid-x align-middle vertical">
+            <div class="cell auto">
+               <h3 class="h3-duracion">4:05</h3>
+            </div>
+            <div class="cell small-4 medium-4 large-4">
+               <button id="boton-icono" class="boton-añadir">
+                  <img id="icono" src="img/anadir.svg" alt="Icono 12">
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="grid-x playlist">
+      <div class="cell small-1 medium-1 large-1 posicion">13</div>
+      <div class="cell small-2 medium-2 large-2">
+         <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Canción 13" class="cover-tendencia">
+      </div>
+      <div class="cell small-4 medium-4 large-4">
+         <h2 class="h2-playlist">Me cuesta tanto olvidarte</h2>
+         <h3 class="h3-playlist">Mecano</h3>
+      </div>
+      <div class="cell small-2 medium-2 large-2">
+         <div class="grid-x align-middle vertical">
+            <h2 class="h2-playlist-album vertical">Entre el Cielo y el Suelo</h2>
+         </div>
+      </div>
+      <div class="cell small-3 medium-3 large-3">
+         <div class="grid-x align-middle vertical">
+            <div class="cell auto">
+               <h3 class="h3-duracion">3:55</h3>
+            </div>
+            <div class="cell small-4 medium-4 large-4">
+               <button id="boton-icono" class="boton-añadir">
+                  <img id="icono" src="img/anadir.svg" alt="Icono 13">
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="grid-x playlist">
+      <div class="cell small-1 medium-1 large-1 posicion">14</div>
+      <div class="cell small-2 medium-2 large-2">
+         <img src="img/albumes/mecano_descanso-dominical.webp" alt="Canción 14" class="cover-tendencia">
+      </div>
+      <div class="cell small-4 medium-4 large-4">
+         <h2 class="h2-playlist">Un año más</h2>
+         <h3 class="h3-playlist">Mecano</h3>
+      </div>
+      <div class="cell small-2 medium-2 large-2">
+         <div class="grid-x align-middle vertical">
+            <h2 class="h2-playlist-album vertical">Descanso Dominical</h2>
+         </div>
+      </div>
+      <div class="cell small-3 medium-3 large-3">
+         <div class="grid-x align-middle vertical">
+            <div class="cell auto">
+               <h3 class="h3-duracion">4:20</h3>
+            </div>
+            <div class="cell small-4 medium-4 large-4">
+               <button id="boton-icono" class="boton-añadir">
+                  <img id="icono" src="img/anadir.svg" alt="Icono 14">
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="grid-x playlist">
+      <div class="cell small-1 medium-1 large-1 posicion">15</div>
+      <div class="cell small-2 medium-2 large-2">
+         <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Canción 15" class="cover-tendencia">
+      </div>
+      <div class="cell small-4 medium-4 large-4">
+         <h2 class="h2-playlist">Cruz de navajas</h2>
+         <h3 class="h3-playlist">Mecano</h3>
+      </div>
+      <div class="cell small-2 medium-2 large-2">
+         <div class="grid-x align-middle vertical">
+            <h2 class="h2-playlist-album vertical">Entre el Cielo y el Suelo</h2>
+         </div>
+      </div>
+      <div class="cell small-3 medium-3 large-3">
+         <div class="grid-x align-middle vertical">
+            <div class="cell auto">
+               <h3 class="h3-duracion">5:05</h3>
+            </div>
+            <div class="cell small-4 medium-4 large-4">
+               <button id="boton-icono" class="boton-añadir">
+                  <img id="icono" src="img/anadir.svg" alt="Icono 15">
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="grid-x playlist">
+      <div class="cell small-1 medium-1 large-1 posicion">16</div>
+      <div class="cell small-2 medium-2 large-2">
+         <img src="img/albumes/mecano_aidalai.webp" alt="Canción 16" class="cover-tendencia">
+      </div>
+      <div class="cell small-4 medium-4 large-4">
+         <h2 class="h2-playlist">Dalai Lama</h2>
+         <h3 class="h3-playlist">Mecano</h3>
+      </div>
+      <div class="cell small-2 medium-2 large-2">
+         <div class="grid-x align-middle vertical">
+            <h2 class="h2-playlist-album vertical">Aidalai</h2>
+         </div>
+      </div>
+      <div class="cell small-3 medium-3 large-3">
+         <div class="grid-x align-middle vertical">
+            <div class="cell auto">
+               <h3 class="h3-duracion">4:25</h3>
+            </div>
+            <div class="cell small-4 medium-4 large-4">
+               <button id="boton-icono" class="boton-añadir">
+                  <img id="icono" src="img/anadir.svg" alt="Icono 16">
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+        
+      </div>
+      <div class="cell auto hide-for-small-only">
+        <div class="grid-x">
+          <img src="img/playlist/00f56557183915.59cbcc586d5b8.webp" alt="Mecano" class="artista-foto">
+      </div>
+        <h1 class="h1-titulo-playlist"> Musica para verano</h1>
+        <div class="grid-x">
+          <div class="cell small-3 medium-3 large-3">
+            <button class="boton-icono">
+              <img src="img/play-morado.svg" alt="" class="icono-reproductor">
+            </button>
+          </div>
+          <div class="cell auto"></div>
+          <div class="cell small-4 medium-5 large-5">
+            <button type="button" class="button small seguir-button">Seguir</button>
+          </div>
+        </div>
+          <div class="grid-x">
+            <div class="cell auto"></div>
+            <div class="cell medium-5 large-5">
+          <button class="boton-imagen-playlist">
+            <img  src="img/quitar.svg" alt="Icono 2" class="" >
+          </button>
+            <button id="boton-icono" class="boton-imagen-playlist">
+              <img id="icono" src="img/anadir.svg" alt="Icono 3" class="">
+            </button>
+           
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>

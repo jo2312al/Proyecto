@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artista</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar" id="responsive-menu">
+    <div class="top-bar-left">
+      <div class="grid-x align-middle"> 
+        <div class="cell small-2 medium-2">
+          <a href="inicio.html" class="logo">
+            <img src="img/logo.svg" alt="Logo" class="logo"> 
+          </a>
+        </div>
+        <div class="cell small-10 medium-shrink search-container"> 
+          <img src="img/search-line.svg" alt="Búsqueda" class="search-icon"> 
+          <input type="search" id="search-input" placeholder="Search" class="search-input"> 
+        </div>
+        <div id="search-results" class="grid-x align-center search-results is-hidden floating-search">
+          <div class="cell small-12 medium-9 large-9">
+              <div class="grid-x">
+            <div class="cell large-6 medium-6 small-6">
+              <h3>Resultados</h3>
+              <div class="result-item">
+                <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                      </div>
+                      <div class="cell small-4">
+                          <p class="song-titulo">ALV</p>
+                          <p class="artist-name-result">Arcangel</p>
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/amor.webp" alt="Angels like you" class="song-image">
+                      </div>
+                      <div class="cell auto">
+                          <p class="song-titulo">Amor</p>
+                          <p class="artist-name-result">Danny Ocean</p>
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="result-item">
+                  <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/dios.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Dios te cuide</p>
+                            <p class="artist-name-result">Manuel Turizo</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/llore.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Lloré</p>
+                            <p class="artist-name-result">Thalia</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/nueva.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Nueva Vida</p>
+                            <p class="artist-name-result">Peso Pluma</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Ya pedo quien sabe</p>
+                            <p class="artist-name-result">Grupo Frontera</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <!-- Repetir para más resultados -->
+          </div>
+                  <div class="cell auto artists-section">
+                    <h3>Artistas</h3>
+                    <div class="grid-x grid-margin-x">
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                            <img src="./img/artistas/billie.webp" class="rounded-circle artist-image" alt="Billie Eilish">
+                            <p class="artist-name">Billie Eilish</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/kanye.webp" class="rounded-circle artist-image" alt="Kanye West">
+                        <p class="artist-name">Kanye West</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/bruno.webp" class="rounded-circle artist-image" alt="Bruno Mars">
+                        <p class="artist-name">Bruno Mars</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/katy.webp" class="rounded-circle artist-image" alt="Katy Perry">
+                        <p class="artist-name">Katy Perry</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/lenny.webp" class="rounded-circle artist-image" alt="Lenny Kravitz">
+                        <p class="artist-name">Lenny Kravitz</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/charlie.webp" class="rounded-circle artist-image" alt="Charlie Puth">
+                        <p class="artist-name">Charlie Puth</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-x grid-margin-x container">
+    <div class="cell small-2 medium-2 sidebar hide-for-small-only">
+      <div class="menu-header">
+        <span class="span">Menú</span>
+      </div>
+      <!-- Contenido del menú lateral -->
+      <ul>
+        <li>
+          <img src="img/icon_perfil.svg" alt="Icono de Perfil" class="menu-item-icon">
+          <a href="perfil.html" class="listado-menu">Perfil</a>
+        </li>
+        <li>
+          <img src="img/icon_libreria.svg" alt="Icono de Librería" class="menu-item-icon">
+          <a href="libreria.html" class="listado-menu">Librería</a>
+        </li>
+        <li>
+          <img src="img/icon_playlist.svg" alt="Icono de Playlist" class="menu-item-icon">
+          <a href="playlist.html" class="listado-menu">Playlist</a>
+        </li>
+        <li>
+          <img src="img/icon_historial.svg" alt="Icono de Historial" class="menu-item-icon">
+          <a href="historial.html" class="listado-menu">Historial</a>
+        </li>
+      </ul>
+    </div>
+    <div class="cell small-12 medium-auto large-10 ">
+      <div class="grid container video-player">
+        <div class="grid-x">
+          <div class="cell small-3 medium-3 large-3">
+          <div class="album-cover">
+              <a href="reproductor.html">     
+                  <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Imagen del álbum">
+              </a>
+          </div>
+        </div>
+  
+          <div class="cell auto">
+              <h2 class="song-title4">Hijo de la Luna</h2>
+              <p class="song-artist">Mecano</p>
+          </div>
+          <div class="cell small-4 medium-2 large-2">
+        <div class="icons">
+          <button class="boton-imagen change-icon">
+              <img id="icono" src="img/anadir.svg" alt="Icono 3" class="icono-reproductor">
+            </button>
+        <button class="boton-imagen">
+          <img  src="img/quitar.svg" alt="Icono 2" class="icono-reproductor" >
+        </button>
+        <button class="boton-imagen">
+          <img src="img/aleatorio.svg" alt="Icono 1" class="icono-reproductor">
+        </button>
+        </div>
+      </div>
+    </div>
+      <div class="grid-x">
+        <div class="cell small-4 medium-4 large-4"></div>
+          <div class="cell small-4 medium-4 large-4">
+              <div class="controls">
+                  <button class="boton-album button">
+                      <img src="img/anterior.svg" alt="Canción Anterior" class="control-icon">
+                  </button>
+                  <button class="boton-album button play-button">
+                      <img src="img/play.svg" alt="Reproducir" class="control-icon play-icon">
+                  </button>
+                  <button class="boton-album button">
+                      <img src="img/siguiente.svg" alt="Siguiente Canción" class="control-icon">
+                  </button>
+              </div>
+      </div>
+    </div>
+        
+        <!-- Barra de progreso -->
+        
+        <audio id="audio" src="audio/Hijo_de_la_Luna_[_YouConvert.net_].mp3"></audio>
+        <div class="grid-x">
+            <div class="slider" data-slider data-initial-start="50" data-end="200">
+                <span class="slider-handle chingadera" data-slider-handle role="slider" tabindex="1"></span>
+                <span class="slider-fill relleno-chingadera" data-slider-fill></span>
+                <input type="hidden">
+            </div>
+        </div>
+    </div>
+  <div class="cell auto show-for-small-only artista-container">
+    <div class="grid-x">
+      <div class="cell small-6">
+    <img src="img/artistas/mecano.webp" alt="Mecano" class="artista-foto">
+  </div>
+  <div class="cell auto">
+    <h1 class="h1-album">Mecano</h1>
+    
+    <div class="grid-x">
+      <div class="cell small-3 medium-3 large-3">
+        <button class="boton-icono">
+          <img src="img/play-morado.svg" alt="" class="icono-reproductor">
+        </button>
+      </div>
+      <div class="cell auto"></div>
+      <div class="cell small-4 medium-4 large-4">
+        <button type="button" class="button small seguir-button">Seguir</button>
+      </div>
+      <div class="grid-x">
+        <p class="info-artista">
+          Mecano fue un icónico grupo español de pop y música electrónica, formado en 1981 por Ana Torroja y los hermanos José María y Nacho Cano. Con éxitos como *"Hijo de la Luna"* y *"Me cuesta tanto olvidarte"*, se convirtió en uno de los grupos más influyentes de los 80 y 90.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+    <div class="grid-x tendencia-conteiner">
+      <div class="cell small-12 medium-9 large-9 "><h1 class="h1-album"> Tendencias</h1>
+      <div class="grid-x tendencia">
+        <div class="cell small-1 medium-1 large-1 posicion">1 
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+          <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Canción Anterior" class="cover-tendencia">
+        </div>
+        <div class="cell small-8 medium-8 large-8">
+          <h2 class=" h1-album">Hijo de la luna</h2>
+        </div>
+        
+        <div class="cell small-1 medium-1 large-1">5:30
+        </div>
+      </div>
+      <div class="grid-x tendencia">
+        <div class="cell small-1 medium-1 large-1 posicion">2
+        </div>
+        <div class="cell small-2 medium-2 large-2 ">
+          <img src="img/albumes/mecano_descanso-dominical.webp" alt="Canción Anterior" class="cover-tendencia">
+        </div>
+        <div class="cell small-8 medium-8 large-8">
+         <h2 class=" h1-album">Me cuesta tanto olvidarte</h2> 
+        </div>
+        <div class="cell small-1 medium-1 large-1">4:32
+        </div>
+      </div>
+      <div class="grid-x tendencia">
+        <div class="cell small-1 medium-1 large-1 posicion">3
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+          <img src="img/albumes/mecano_aidalai.webp" alt="Canción Anterior" class="cover-tendencia">
+        </div>
+        <div class="cell small-8 medium-8 large-8 ">
+          <h2 class=" h1-album">Aire</h2>
+        </div>
+        <div class="cell small-1 medium-1 large-1 ">3:54
+        </div>
+      </div>
+      <div class="grid-x tendencia">
+        <div class="cell small-1 medium-1 large-1 posicion">4
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+          <img src="img/albumes/mecano_descanso-dominical.webp" alt="Canción Anterior" class="cover-tendencia">
+        </div>
+        <div class="cell small-8 medium-8 large-8 ">
+         <h2 class=" h1-album"> El 7 de septiembre</h2>
+        </div>
+        <div class="cell small-1 medium-1 large-1">4:27 
+        </div>
+      </div>
+      <div class="grid-x tendencia">
+        <div class="cell small-1 medium-1 large-1 posicion">5
+        </div>
+        <div class="cell small-2 medium-2 large-2">
+          <img src="img/albumes/mecano_ya-viene-el-sol.webp" alt="Canción Anterior" class="cover-tendencia">
+        </div>
+        <div class="cell auto ">
+          <h2 class=" h1-album">
+          Un año más
+          </h2>
+        </div>
+        <div class="cell small-1 medium-1 large-1">4:15
+        </div>
+      </div>
+      </div>
+      <div class="cell auto hide-for-small-only">
+        <div class="grid-x">
+          <img src="img/artistas/mecano.webp" alt="Mecano" class="artista-foto">
+      </div>
+        Mecano
+        <div class="grid-x">
+          <div class="cell small-3 medium-3 large-3">
+            <button class="boton-icono">
+              <img src="img/play-morado.svg" alt="" class="icono-reproductor">
+            </button>
+          </div>
+          <div class="cell auto"></div>
+          <div class="cell small-4 medium-4 large-4">
+            <button type="button" class="button small seguir-button">Seguir</button>
+          </div>
+          <div class="grid-x">
+            <p class="info-artista">
+              **Mecano** fue un icónico grupo español de pop y música electrónica, formado en 1981 por Ana Torroja y los hermanos José María y Nacho Cano. Con éxitos como *"Hijo de la Luna"* y *"Me cuesta tanto olvidarte"*, se convirtió en uno de los grupos más influyentes de los 80 y 90.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Álbumes -->
+     <div class="x grid albumes" style="margin-top: .8rem;">
+<h4 class="h1-album">Álbumes</h4>
+<div class="scrolling-container">
+  <div class="scrolling-wrapper grid-x grid-margin-x">
+    <div class="cell large-3 medium-4 small-6">
+      <div class="position-relative card">
+        <a href="album.html">
+        <img src="./img/albumes/mecano_aidalai.webp" class="thumbnail" alt="Aidalai"></a>
+        <div class="">
+        <h2 class="album-text" > Aidalai</h2>
+        <h3 class="h3-album">1991</h3>
+      </div>
+      </div>
+    </div>
+    <div class="cell large-3 medium-4 small-6">
+      <div class="position-relative card">
+        <a href="album.html">
+        <img src="./img/albumes/mecano_ya-viene-el-sol.webp" class="thumbnail" alt="Ya viene el sol"></a>
+        <div class="">
+        <h2 class="album-text" > Ya viene el sol</h2>
+        <h3 class="h3-album">1984</h3>
+      </div>
+      </div>
+    </div>
+    <div class="cell large-3 medium-4 small-6">
+      <div class="position-relative card">
+        <a href="album.html">
+        <img src="./img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" class="thumbnail" alt="Entre el cielo y el suelo"></a>
+        <div class="">
+        <h2 class="album-text" > Entre el cielo y el suelo</h2>
+        <h3 class="h3-album">1986</h3>
+      </div>
+      </div>
+    </div>
+    <div class="cell large-3 medium-4 small-6">
+      <div class="position-relative card">
+        <a href="">
+        <img src="./img/albumes/mecano_donde-esta-el-pais-de-las-hadas.webp" class="thumbnail" alt="$AD BOYS 4 LIFE II"></a>
+        <div class="">
+        <h2 class="album-text" > Donde está el pais de las hadas?</h2>
+        <h3 class="h3-album">1983</h3>
+      </div>
+      </div>
+    </div>
+    <div class="cell large-3 medium-4 small-6">
+      <div class="position-relative card">
+        <a href="album.html">
+        <img src="./img/albumes/mecano_descanso-dominical.webp" class="thumbnail" alt="$AD BOYS 4 LIFE II"></a>
+        <div class="">
+        <h2 class="album-text" > Descanso dominical</h2>
+        <h3 class="h3-album">1988</h3>
+      </div>
+      </div>
+    </div>
+    <div class="cell large-3 medium-4 small-6">
+      <div class="position-relative card">
+        <a href="album.html">
+        <img src="./img/albumes/mecano_ana-jose-nacho.webp" class="thumbnail" alt="$AD BOYS 4 LIFE II"></a>
+        <div class="">
+        <h2 class="album-text" > Ana, Jose y Nacho</h2>
+        <h3 class="h3-album">1998</h3>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+
+
+</body>
+</html>

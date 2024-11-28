@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reproductor</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar" id="responsive-menu">
+    <div class="top-bar-left">
+      <div class="grid-x align-middle"> 
+        <div class="cell small-2 medium-2">
+          <a href="inicio.html" class="logo">
+            <img src="img/logo.svg" alt="Logo" class="logo"> 
+          </a>
+        </div>
+        <div class="cell small-10 medium-shrink search-container"> 
+          <img src="img/search-line.svg" alt="Búsqueda" class="search-icon"> 
+          <input type="search" id="search-input" placeholder="Search" class="search-input"> 
+        </div>
+        <div id="search-results" class="grid-x align-center search-results is-hidden floating-search">
+          <div class="cell small-12 medium-9 large-9">
+              <div class="grid-x">
+            <div class="cell large-6 medium-6 small-6">
+              <h3>Resultados</h3>
+              <div class="result-item">
+                <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                      </div>
+                      <div class="cell small-4">
+                          <p class="song-titulo">ALV</p>
+                          <p class="artist-name-result">Arcangel</p>
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/amor.webp" alt="Angels like you" class="song-image">
+                      </div>
+                      <div class="cell auto">
+                          <p class="song-titulo">Amor</p>
+                          <p class="artist-name-result">Danny Ocean</p>
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="result-item">
+                  <a href="reproductor.html">
+                  <div class="grid-x grid-search">
+                      <div class="cell small-3 medium-4" style="align-content: center;">
+                          <img src="/img/lanzamientos/dios.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Dios te cuide</p>
+                            <p class="artist-name-result">Manuel Turizo</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/llore.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Lloré</p>
+                            <p class="artist-name-result">Thalia</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/nueva.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Nueva Vida</p>
+                            <p class="artist-name-result">Peso Pluma</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="result-item">
+                <a href="reproductor.html">
+                    <div class="grid-x grid-search">
+                        <div class="cell small-3 medium-4" style="align-content: center;">
+                            <img src="/img/lanzamientos/alv.webp" alt="Angels like you" class="song-image">
+                        </div>
+                        <div class="cell auto">
+                            <p class="song-titulo">Ya pedo quien sabe</p>
+                            <p class="artist-name-result">Grupo Frontera</p>
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <!-- Repetir para más resultados -->
+          </div>
+                  <div class="cell auto artists-section">
+                    <h3>Artistas</h3>
+                    <div class="grid-x grid-margin-x">
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                            <img src="./img/artistas/billie.webp" class="rounded-circle artist-image" alt="Billie Eilish">
+                            <p class="artist-name">Billie Eilish</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/kanye.webp" class="rounded-circle artist-image" alt="Kanye West">
+                        <p class="artist-name">Kanye West</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/bruno.webp" class="rounded-circle artist-image" alt="Bruno Mars">
+                        <p class="artist-name">Bruno Mars</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/katy.webp" class="rounded-circle artist-image" alt="Katy Perry">
+                        <p class="artist-name">Katy Perry</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/lenny.webp" class="rounded-circle artist-image" alt="Lenny Kravitz">
+                        <p class="artist-name">Lenny Kravitz</p>
+                        </a>
+                      </div>
+                      <div class="cell small-6 text-center">
+                        <a href="artista.html">
+                        <img src="./img/artistas/charlie.webp" class="rounded-circle artist-image" alt="Charlie Puth">
+                        <p class="artist-name">Charlie Puth</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-x grid-margin-x container">
+    <div class="cell large-2 medium-2 sidebar hide-for-small-only">
+      <div class="menu-header">
+        <span class="span">Menú</span>
+      </div>
+      <!-- Contenido del menú lateral -->
+      <ul>
+        <li>
+          <img src="img/icon_perfil.svg" alt="Icono de Perfil" class="menu-item-icon">
+          <a href="perfil.html" class="listado-menu">Perfil</a>
+        </li>
+        <li>
+          <img src="img/icon_libreria.svg" alt="Icono de Librería" class="menu-item-icon">
+          <a href="libreria.html" class="listado-menu">Librería</a>
+        </li>
+        <li>
+          <img src="img/icon_playlist.svg" alt="Icono de Playlist" class="menu-item-icon">
+          <a href="playlist.html" class="listado-menu">Playlist</a>
+        </li>
+        <li>
+          <img src="img/icon_historial.svg" alt="Icono de Historial" class="menu-item-icon">
+          <a href="historial.html" class="listado-menu">Historial</a>
+        </li>
+      </ul>
+    </div>
+  <div class="cell auto">
+    <div class="grid-x ">
+        <div class="cell small-12 medium-8 large-8 video-player">
+            <div class="grid-x ">
+                <div class="cell auto">
+                     <a href="reproductor.html">
+                        <img src="img/albumes/mecano_ana-jose-nacho.webp" alt="albúm mecano Ana jose y nacho" class="cover-reproductor">
+                     </a>
+                    </div>
+            </div>
+            <div class="grid-x">
+                <div class="cell auto">
+                    <div class="grid-x">
+                        <h1 class="h1-album">HIjo de la luna</h1>
+                    </div>
+                    <div class="grid-x">
+                        <h2 class="h2-album"><a href="artista.html">Mecano</a></h2>
+                    </div>
+                </div>
+                    <div class="cell shrink vertical">
+                        <button class="boton-imagen">
+                          <img  src="img/quitar.svg" alt="Icono 2" class="icono-reproductor" >
+                        </button>
+                        <button class="boton-imagen change-icon">
+                            <img id="icono" src="img/anadir.svg" alt="Icono 3" class="icono-reproductor">
+                          </button>
+                    </div>
+            </div>
+            <audio id="audio" src="audio/Hijo_de_la_Luna_[_YouConvert.net_].mp3"></audio>
+            <div class="grid-x">
+                <div class="slider" data-slider data-initial-start="50" data-end="200">
+                    <span class="slider-handle chingadera" data-slider-handle role="slider" tabindex="1"></span>
+                    <span class="slider-fill relleno-chingadera" data-slider-fill></span>
+                    <input type="hidden">
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="cell small-4 medium-4 large-4"></div>
+                <div class="cell small-4 medium-4 large-4">
+                    <div class="controls">
+                        <button class="boton-album button">
+                            <img src="img/anterior.svg" alt="Canción Anterior" class="control-icon">
+                        </button>
+                        <button class="boton-album button play-button">
+                            <img src="img/play.svg" alt="Reproducir" class="control-icon play-icon">
+                        </button>
+                        <button class="boton-album button">
+                            <img src="img/siguiente.svg" alt="Siguiente Canción" class="control-icon">
+                        </button>
+                    </div>
+                </div>
+                    <div class="cell auto"></div>
+                    <div class="cell shrink">
+                        <a href="reproductor-letra.html">
+                        <button class="boton-album button">
+                            <img id="icono" src="img/letra.svg" alt="letra" class="" style="height: 25px; width: 25px;">
+                        </button>
+                    </a>
+                    </div>
+            </div>
+            </div>
+        <div class="cell auto"  style="margin-left: 1rem;">
+            <div class="grid-x">
+                <div class="cell auto">
+                    <h1 class="h1-album">Lista de reproducción</h1>
+                </div>
+                <div class="cell shrink">
+                    <button class="boton-album button">
+                        
+                    </button>
+                </div>
+            </div>
+            <div class="grid-x album-cancion" >
+                <div class="cell small-2 medium-2 large-2 vertical">
+                    <a href="reproductor.html">
+                        <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Canción Anterior" class="cover-reproductor2">
+                    </a>
+                </div>
+                <div class="cell auto">
+                    <div class="grid-x">
+                        <a href="reproductor.html">
+                        <h2 class="cancion-album">La fuerza del destino</h2>
+                        </a>
+                    </div>
+                    <div class="grid-x">
+                        <h3 class="artista-album">Canción - <a href="artista.html">Mecano</a></h3>
+                    </div>
+                </div>
+                <div class="cell shrink">
+                    <div class="grid-x vertical">
+                        <button class="boton-añadir">
+                            <img id="icono" src="img/play-gris.svg" alt="Reproducir La fuerza del destino" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                        <button class="boton-imagen" style="background: none; border: none; padding: 0;">
+                            <img id="icono" src="img/menu.svg" alt="Menú La fuerza del destino" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x album-cancion">
+                <div class="cell small-2 medium-2 large-2 vertical">
+                    <a href="reproductor.html">
+                    <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Portada del álbum" class="cover-reproductor2">
+                </a>
+                </div>
+                <div class="cell auto">
+                    <div class="grid-x">
+                        <a href="reproductor.html">
+                        <h2 class="cancion-album">La fuerza del destino</h2>
+                        </a>
+                    </div>
+                    <div class="grid-x">
+                        <h3 class="artista-album">Canción - <a href="artista.html">Mecano</a></h3>
+                    </div>
+                </div>
+                <div class="cell shrink">
+                    <div class="grid-x vertical">
+                        <button class="boton-añadir">
+                            <img id="icono" src="img/play-gris.svg" alt="Reproducir La fuerza del destino" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                        <button class="boton-imagen" style="background: none; border: none; padding: 0;">
+                            <img id="icono" src="img/menu.svg" alt="Menú La fuerza del destino" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+ 
+            
+            <div class="grid-x album-cancion">
+                <div class="cell small-2 medium-2 large-2 vertical">
+                     <a href="reproductor.html">
+                        <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Portada del álbum" class="cover-reproductor2">
+                     </a>
+                    </div>
+                <div class="cell auto">
+                    <div class="grid-x">
+                         <a href="reproductor.html">
+                        <h2 class="cancion-album">Hijo de la luna</h2>
+                         </a>
+                    </div>
+                    <div class="grid-x">
+                        <h3 class="artista-album">Canción - <a href="artista.html">Mecano</a></h3>
+                    </div>
+                </div>
+                <div class="cell shrink">
+                    <div class="grid-x vertical">
+                        <button class="boton-añadir">
+                            <img id="icono" src="img/play-gris.svg" alt="Reproducir Hijo de la luna" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                        <button class="boton-imagen" style="background: none; border: none; padding: 0;">
+                            <img id="icono" src="img/menu.svg" alt="Menú Hijo de la luna" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-x album-cancion">
+                <div class="cell small-2 medium-2 large-2 vertical">
+                     <a href="reproductor.html">
+                        <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Portada del álbum" class="cover-reproductor2">
+                     </a>
+                    </div>
+                <div class="cell auto">
+                    <div class="grid-x">
+                         <a href="reproductor.html">
+                        <h2 class="cancion-album">Cruz de navajas</h2>
+                         </a>
+                    </div>
+                    <div class="grid-x">
+                        <h3 class="artista-album">Canción - <a href="artista.html">Mecano</a></h3>
+                    </div>
+                </div>
+                <div class="cell shrink">
+                    <div class="grid-x vertical">
+                        <button class="boton-añadir">
+                            <img id="icono" src="img/play-gris.svg" alt="Reproducir Cruz de navajas" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                        <button class="boton-imagen" style="background: none; border: none; padding: 0;">
+                            <img id="icono" src="img/menu.svg" alt="Menú Cruz de navajas" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-x album-cancion">
+                <div class="cell small-2 medium-2 large-2 vertical">
+                     <a href="reproductor.html">
+                        <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Portada del álbum" class="cover-reproductor2">
+                     </a>
+                    </div>
+                <div class="cell auto">
+                    <div class="grid-x">
+                         <a href="reproductor.html">
+                        <h2 class="cancion-album">Me cuesta tanto olvidarte</h2></a>
+                    </div>
+                    <div class="grid-x">
+                        <h3 class="artista-album">Canción - <a href="artista.html">Mecano</a></h3>
+                    </div>
+                </div>
+                <div class="cell shrink">
+                    <div class="grid-x vertical">
+                        <button class="boton-añadir">
+                            <img id="icono" src="img/play-gris.svg" alt="Reproducir Me cuesta tanto olvidarte" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                        <button class="boton-imagen" style="background: none; border: none; padding: 0;">
+                            <img id="icono" src="img/menu.svg" alt="Menú Me cuesta tanto olvidarte" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-x album-cancion">
+                <div class="cell small-2 medium-2 large-2 vertical">
+                     <a href="reproductor.html">
+                        <img src="img/albumes/mecano_entre-el-cielo-y-el-suelo.webp" alt="Portada del álbum" class="cover-reproductor2">
+                     </a>
+                     </div>
+                <div class="cell auto">
+                    <div class="grid-x">
+                         <a href="reproductor.html">
+                        <h2 class="cancion-album">Laika</h2></a>
+                    </div>
+                    <div class="grid-x">
+                        <h3 class="artista-album">Canción - <a href="artista.html">Mecano</a></h3>
+                    </div>
+                </div>
+                <div class="cell shrink">
+                    <div class="grid-x vertical">
+                        <button class="boton-añadir">
+                            <img id="icono" src="img/play-gris.svg" alt="Reproducir Laika" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                        <button class="boton-imagen" style="background: none; border: none; padding: 0;">
+                            <img id="icono" src="img/menu.svg" alt="Menú Laika" class="icono-reproductor" style="height: 25px; width: 25px;">
+                        </button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+   document.querySelectorAll('.boton-añadir').forEach(boton => {
+    boton.addEventListener('click', function () {
+        const icono = this.querySelector('.icono-reproductor');
+        if (icono.src.includes('play-gris.svg')) {
+            icono.src = 'img/pausa-morado.svg';
+        } else {
+            icono.src = 'img/play-gris.svg';
+        }
+    });
+});
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1088 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+// Global styles
+@include foundation-global-styles;
+@include foundation-forms;
+@include foundation-typography;
+
+// Grids (choose one)
+@include foundation-xy-grid-classes;
+// @include foundation-grid;
+// @include foundation-flex-grid;
+
+// Generic components
+@include foundation-button;
+@include foundation-button-group;
+@include foundation-close-button;
+@include foundation-label;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-range-input;
+@include foundation-switch;
+@include foundation-table;
+// Basic components
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-dropdown;
+@include foundation-pagination;
+@include foundation-tooltip;
+
+// Containers
+@include foundation-accordion;
+@include foundation-media-object;
+@include foundation-orbit;
+@include foundation-responsive-embed;
+@include foundation-tabs;
+@include foundation-thumbnail;
+// Menu-based containers
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-accordion-menu;
+@include foundation-drilldown-menu;
+@include foundation-dropdown-menu;
+
+// Layout components
+@include foundation-off-canvas;
+@include foundation-reveal;
+@include foundation-sticky;
+@include foundation-title-bar;
+@include foundation-top-bar;
+
+// Helpers
+@include foundation-float-classes;
+@include foundation-flex-classes;
+@include foundation-visibility-classes;
+// @include foundation-prototype-classes;
+
+// Motion UI
+@include motion-ui-transitions;
+@include motion-ui-animations;
+// app.scss
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('font/Roboto.ttf') format('truetype'); /* Ruta a tu archivo .ttf */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Aplica la fuente a tu contenido */
+body {
+  font-family: 'Roboto', serif;
+}
+@media (max-width: 200px) { // Cambia 768px según el punto de quiebre que desees
+    .element-to-hide {
+      display: none; // Oculta el elemento
+    }
+  }
+  
+
+.top-bar {
+    background-color: #ffffff; // Cambia la barra a transparente
+    box-shadow: none; // Quita la sombra
+    border: none;
+}
+
+.logo {
+    height: 50px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; // Alinea verticalmente en el centro
+  }
+  
+  .search-icon {
+    height: 50px; // Ajusta la altura del ícono
+    margin-right: 10px; // Espacio entre el ícono y el campo de búsqueda
+  }
+  
+  .search-input {
+    height: 50px;
+    background-color: #D9D9D9;
+    border: 1px solid #ccc; // Color y estilo del borde
+    border-radius: 15px; // Radio del borde para que sea curvo
+    width: 200%;
+    max-width: 200% !important;
+  }
+  // app.scss
+// Estilos para el contenedor del menú
+.container-menu {
+  display: flex;
+}
+
+.sidebar {
+  padding: 15px; /* Padding general para todo el sidebar */
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+// Encabezado del menú
+.menu-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 2rem; /* Alineación del encabezado */
+
+  .menu-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 8px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+// Lista de enlaces
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px; /* Alineación de íconos */
+}
+
+// Elemento de la lista del menú
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; // Espacio entre ícono y texto
+  margin: 10px 0;
+}
+
+// Ícono del menú lateral
+.menu-item-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.titulo{
+  background-color: #0078d4;
+  font: optional;
+  font-size: medium;
+  color: red;
+}
+.duracion{
+  background-color: #9747FF;
+  color: green;
+}
+// Enlace
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+  line-height: 1;
+
+  &:hover {
+    color: #0078d4;
+  }
+}.video-player {
+  background-color: #F3F3F3; /* Color de fondo */
+  color: #000000;
+  padding: 2vw; /* Espaciado con vw */
+  border-radius: 1.5vw; /* Borde redondeado en vw */
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Alinear elementos verticalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.album-cover {
+  margin-right: 3vw;
+  width: 20vw;
+  height: auto; /* Espaciado entre la imagen y la información */
+}
+
+.album-cover img { 
+  border-radius: 1.5vw; /* Radio de borde para la imagen */
+}
+
+.song-container {
+  display: flex; /* Usar flexbox para alinear los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.song-info {
+  flex-grow: 1; /* Permite que el contenedor de información ocupe el espacio restante */
+}
+
+
+.song-artist {
+  font-size: 1.1rem; /* Tamaño de la letra para el artista en vw */
+  padding: 0vh 2vw;
+  margin: 0; /* Eliminar márgenes por defecto */
+}
+
+/* Contenedor para los controles y el slider */
+.controls-container {
+  display: flex;
+  flex-direction: column; /* Colocar los controles y el slider uno debajo del otro */
+  justify-content: center; /* Centrar verticalmente los controles */
+  flex-grow: 1; /* Permitir que este contenedor ocupe el espacio restante */
+}
+.video-player-icon {
+  width: 5vw;      /* El ancho será 10% del ancho de la pantalla */
+  height: 5vw;     /* El alto será 10% del ancho de la pantalla para mantener proporción */
+  max-width: 30px;  /* Tamaño máximo para evitar que se agrande demasiado en pantallas grandes */
+  min-width: 30px;  /* Tamaño mínimo para evitar que sea demasiado pequeño en pantallas pequeñas */
+  border-radius: 50%;     /* Hace el icono circular */
+  display: flex;
+  font-size: 5vw;         /* Ajusta el tamaño del icono dentro, se adapta a la pantalla */
+}
+
+.controls {
+  display: flex;
+  justify-content: center; /* Centrar los iconos de control horizontalmente */
+  gap: 3vw; /* Espaciado entre los controles */
+  margin-top: 1vh; /* Espacio superior en vh */
+}
+
+.control-icon {
+  width: 2rem; /* Tamaño de los iconos de control en vw */
+  height: auto; /* Mantiene la proporción del icono */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+}
+
+.slider {
+  width: 100%; /* Ancho completo */
+  margin: 2vh 0; /* Espacio alrededor del slider en vh */
+}
+
+.slider-range {
+  -webkit-appearance: none; /* Quitar estilo por defecto en WebKit */
+  appearance: none; /* Quitar estilo por defecto */
+  width: 100%; /* Ancho completo */
+  height: 0.8vh; /* Altura de la barra en vh */
+  background: #d0d0d0; /* Color de fondo de la barra */
+  border-radius: 0.5vh; /* Bordes redondeados en vh */
+  outline: none; /* Sin contorno al hacer foco */
+  transition: background 0.3s; /* Transición suave */
+}
+/* Para navegadores WebKit (Chrome, Safari) */
+.slider-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Quitar estilo por defecto */
+  appearance: none; /* Quitar estilo por defecto */
+  width: 2vw; /* Ancho del thumb en vw */
+  height: 2vh; /* Alto del thumb en vh */
+  border-radius: 50%; /* Bordes redondeados */
+  background: #9747FF; /* Color del thumb */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el thumb */
+  box-shadow: 0 0 2px rgba(212, 30, 30, 0.5); /* Sombra para el thumb */
+}
+
+/* Para navegadores Firefox */
+.slider-range::-moz-range-thumb {
+  width: 2vw; /* Ancho del thumb en vw */
+  height: 2vh; /* Alto del thumb en vh */
+  border-radius: 50%; /* Bordes redondeados */
+  background: #3c0e79; /* Color del thumb */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el thumb */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Sombra para el thumb */
+}
+
+/* Para navegadores Microsoft Edge y otros */
+.slider-range::-ms-thumb {
+  width: 2vw; /* Ancho del thumb en vw */
+  height: 2vh; /* Alto del thumb en vh */
+  border-radius: 50%; /* Bordes redondeados */
+  background: #9747FF; /* Color del thumb */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el thumb */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Sombra para el thumb */
+}
+
+/* Estilos adicionales para el track del slider */
+.slider-range::-webkit-slider-runnable-track {
+  height: 0.8vh; /* Altura de la barra en vh */
+  background: #d0d0d0; /* Color de fondo de la barra */
+  border-radius: 0.5vh; /* Bordes redondeados */
+}
+
+.slider-range::-moz-range-track {
+  height: 0.8vh; /* Altura de la barra en vh */
+  background: #d0d0d0; /* Color de fondo de la barra */
+  border-radius: 0.5vh; /* Bordes redondeados */
+}
+
+.slider-range::-ms-track {
+  height: 0.8vh; /* Altura de la barra en vh */
+  background: transparent; /* Fondo transparente */
+  border-color: transparent; /* Sin borde */
+  color: transparent; /* Sin color */
+}
+
+.slider-range::-ms-fill-lower {
+  background: #3c0e79; /* Color de la parte inferior en el track */
+}
+
+.slider-range::-ms-fill-upper {
+  background: #d0d0d0; /* Color de la parte superior en el track */
+}
+.tendencia-conteiner {
+  background-color: #eaeaea; /* Color de fondo */
+  color: #000000;
+  padding: 2vw; /* Espaciado con vw */
+  border-radius: 1.5vw; /* Borde redondeado en vw */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+.tendencia {
+  background-color: #F3F3F3; /* Color de fondo */
+  color: #000000;
+  padding:  4vh; /* Espaciado con vw */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  margin-bottom: 10px;
+  border-radius: 15px;
+
+}
+
+.chingadera{
+  border-radius: 50%;
+   background-color: #9747FF;
+}
+.relleno-chingadera{
+  background-color: #9747FF;
+}
+.boton-imagen {
+  background: none !important;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  float: right;
+
+  img {
+    width: 1.7rem;
+    height: auto;
+    transition: transform 0.2s ease;
+  }
+  &:active img {
+    transform: scale(0.9);  // Efecto de clic que reduce el tamaño del icono
+  }
+}
+.posicion{
+  text-align: center;
+  color: #0a0a0a;
+  padding: 10px;
+  border: 2px;
+  font-size: 3vw;
+}
+
+.scrolling-container {
+  width: 100%; /* Ajusta el tamaño del contenedor */
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  overflow-y: hidden; /* Oculta cualquier desplazamiento vertical */
+  white-space: nowrap; /* Evita que las cards se alineen verticalmente */
+  background-color: #eaeaea ;
+}
+
+.scrolling-wrapper {
+  display: flex; /* Flexbox para que las cards estén en una línea horizontal */
+  gap: 10px; /* Espacio entre las cards */
+  flex-wrap: nowrap; /* Asegura que las cards no se envuelvan */
+}
+
+.cell {
+  flex: 0 0 auto; /* Evita que las celdas se expandan */
+}
+
+.thumbnail {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+  height: auto;
+  display: block; /* Asegura que la imagen se comporte correctamente */
+}
+.card {
+  position: relative; /* Necesario para colocar el texto en el contenedor */
+}
+
+/*.album-text {
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-align: right;
+}*/
+.album-text {
+  position: absolute;
+  bottom: 30px; /* Ajusta la distancia desde el borde inferior de la imagen */
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%); /* Centra el texto perfectamente */
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+.h3-album {
+  position: absolute;
+  bottom: 10px; /* Ajusta la distancia desde el borde inferior de la imagen */
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%); /* Centra el texto perfectamente */
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  font-size: 14px;
+  text-align: center;
+}
+.albumes{
+  background-color: #eaeaea;
+}
+.info-artista {
+  max-width: 100%; /* Asegura que el párrafo no supere el ancho de la pantalla */
+  word-wrap: break-word; /* Divide palabras largas si es necesario */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  font-size: .7rem;
+}
+.artista-container {
+  background-color: #eaeaea; /* Color de fondo */
+  color: #000000;
+  padding: 2vw; /* Espaciado con vw */
+  border-radius: 1.5vw; /* Borde redondeado en vw */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+.seguir-button{
+  background-color: #9747FF;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: medium;
+}
+.artista-foto {
+  max-width: 100%;
+  height: 110%;
+  border-radius: 25px;
+  padding: 15px;
+}
+.cover-tendencia{
+      width: 10vw;
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    float: left;
+    border: 10px;
+}
+.listado-menu{
+  font-weight: bold;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+.h1-titulo{
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 0vh 3vw;
+  white-space: nowrap;
+}
+.h2-tendencia{
+  font-size: 2.5vw;
+  font-weight: bold;
+  padding: 0vh 3vw;
+  white-space: nowrap;
+}
+.h2-playlist{
+  font-size: 2.2vw;
+  font-weight: bold;
+  padding: 0vh 1.5vw;
+  white-space: nowrap;
+  overflow: hidden;           /* Oculta cualquier texto que se salga del contenedor */
+  text-overflow: ellipsis;    /* Agrega "..." al final si el texto es muy largo */
+  max-width: 90%;             /* Define un ancho máximo para el texto */
+}
+.h2-playlist-album{
+  font-size: 1.6vw;
+  font-weight: bold;
+  padding: 0vh .5vw;
+  white-space: nowrap;
+  overflow: hidden;           /* Oculta cualquier texto que se salga del contenedor */
+  text-overflow: ellipsis;
+  max-width: 90%;
+  height: 100%;
+  align-items: center;             /* Define un ancho máximo para el texto */
+}
+.h3-playlist{
+  font-size: 2.2vw;
+  padding: 0vh 1.5vw;
+  white-space: nowrap;        /* Evita que el texto pase a otra línea */
+  overflow: hidden;           /* Oculta cualquier texto que se salga del contenedor */
+  text-overflow: ellipsis;    /* Agrega "..." al final si el texto es muy largo */
+  max-width: 90%;             /* Define un ancho máximo para el texto */
+}
+.boton-añadir {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  float: right;
+
+  img {
+    width: 4vw;
+    height: auto;
+    transition: transform 0.2s ease;
+  }
+  &:active img {
+    transform: scale(0.9);  // Efecto de clic que reduce el tamaño del icono
+  }
+}
+.h3-duracion {
+  font-size: 2.2vw;
+  padding: 0vh 1.5vw;
+  white-space: nowrap;        /* Evita que el texto pase a otra línea */
+  overflow: hidden;           /* Oculta cualquier texto que se salga del contenedor */
+  max-width: 90%; 
+  float: right;
+}
+.playlist {
+  background-color: #f3f3f3;
+  color: #000;
+  padding: 4vh;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  height: fit-content;
+}
+.altura-fit{
+  height: fit-content;
+}
+.vertical{
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.boton-imagen-playlist {
+  background: none;
+  border: none;
+  padding: none;
+  cursor: pointer;
+  width: 3.2vw;
+}
+.boton-imagen-playlist2 {
+  background: none;
+  border: none;
+  padding: none;
+  cursor: pointer;
+  width: 6.4vw;
+}
+.h1-titulo-playlist {
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 0vh 3vw;
+  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.center-container {
+  height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+.editar-container{
+  background-color: #eaeaea;
+  border-radius: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.editar-label{
+  padding: .8vh 4vw .8vh 4vw;
+}
+.boxtext{
+  border-radius: 15px;
+  background-color: #D9D9D9;
+  margin-bottom: 0%;
+}
+.h2-label-text{
+  padding: 0vh 0vw 1.1vh 0vw;
+  font-size: 2.5vh;
+}
+.h1-editar-perfil{
+  padding: 2vh 5.4vh 0vh 4vh;
+  margin-left: 2vw;
+  font-size: x-large;
+  font-weight: bold;
+}
+.cancelar-button {
+  background-color: #989898;
+  border-radius: 25px;
+  color: #fff;
+  font-size: medium;
+  margin: 0 4vw 0 4vw;
+  width: 80%;
+  display: block;
+}
+.editar-button {
+  background-color: #9747ff;
+  border-radius: 25px;
+  color: #fff;
+  font-size: small;
+  margin: 0 4vw 0 4vw;
+  width: 80%;
+  display: block;
+}
+.checkbox-editar{
+  margin: 0 0 0 4vw;
+  background-color: #D9D9D9;
+}
+.boxtext-login{
+  border-radius: 15px;
+  background-color: #D9D9D9;
+  margin-bottom: 2.3%;
+}
+.iniciar-button {
+  background-color: #9747ff;
+  border-radius: 25px;
+  color: #fff;
+  font-size: small;
+  margin: 4vh 4vw 2vh 4vw;
+  width: 80%;
+  display: block;
+}
+.registrar-text{
+  font-size: large;
+  text-decoration: underline;
+  margin-top: 3%;
+  cursor: pointer;
+}
+.network-button{
+
+  width: 85%;
+   height: 6vh;
+   padding: 4%;
+   margin-bottom: 5%;
+   cursor: pointer;
+}
+.network-button2{
+
+  width: 85%;
+   height: 6vh;
+   padding: 2%;
+   margin-bottom: 5%;
+}
+a{
+  color: #000000;
+}
+input::placeholder {
+  color: black;
+}
+/* Quitar el borde y las barras de desplazamiento del dialog */
+dialog {
+  border: none; /* Elimina el borde */
+  overflow: hidden; /* Elimina las barras de desplazamiento */
+  width: 50%;
+   height: fit-content;
+}
+.modalTxt{
+  font-size: medium;
+  font-weight: bold;
+}
+/* Animación de cierre */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+/* Animación de apertura */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Clases para animación */
+dialog.closing {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+dialog.opening {
+  animation: fadeIn 0.3s ease forwards;
+}
+.h2-codigo{
+  margin-bottom :14% ;
+}
+.code-input {
+  display: flex;
+  gap: 10px; /* Espaciado entre los inputs */
+  justify-content: center; /* Centra los inputs horizontalmente */
+}
+
+.code-input input {
+  width: 40px; /* Tamaño uniforme para los inputs */
+  height: 40px;
+  text-align: center; /* Centra el texto dentro del input */
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.modals{
+  border: none; /* Elimina el borde */
+  overflow: hidden; /* Elimina las barras de desplazamiento */
+  width: 50%;
+   height: fit-content;
+}
+/* Barra de búsqueda */
+
+/* Responsivo para pantallas menores de 768px */
+@media (max-width: 768px) {
+  .side-static {
+    width: 100px; /* Sidebar más pequeño en pantallas pequeñas */
+  }
+
+  .content-area {
+    margin-left: 100px; /* Ajusta margen para pantallas pequeñas */
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Estilos para la sección de resultados */
+.result-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.song-image {
+  width: fit-content;
+  height: fit-content;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+
+
+.results-section {
+  padding-right: 200px;
+}
+
+.result-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: fit-content; /* o establece un ancho fijo si es necesario */
+  padding: 0vh 2vw;
+  overflow: hidden; /* Oculta el desbordamiento */
+  text-overflow: ellipsis; /* Añade puntos suspensivos (...) */
+  white-space: nowrap; /* Evita que el texto haga un salto de línea */
+  margin-bottom: 0.3rem;
+}
+.song-title4 {
+  font-weight: bold;
+  font-size: 1.9rem;
+  width: fit-content; /* o establece un ancho fijo si es necesario */
+  padding: 0vh 2vw;
+  overflow: hidden; /* Oculta el desbordamiento */
+  text-overflow: ellipsis; /* Añade puntos suspensivos (...) */
+  white-space: break-spaces; /* Evita que el texto haga un salto de línea */
+  margin-bottom: 0.3rem;
+}
+.rounded-circle {
+  border-radius: 50%!important;
+}
+
+.artist-name-result {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Sección de artistas */
+.artist-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.artist-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.artist-image {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.artist-name {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.song-titulo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 992px) {
+  .results-section {
+    padding-right: 100px;
+  }
+
+  .song-titulo {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .artist-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+  .results-section {
+    padding-right: 0;
+  }
+
+  .result-item {
+    padding: 5px;
+  }
+
+  .song-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+
+  .artist-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .artist-item {
+    width: 50%;
+  }
+
+  .artist-name {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+  .result-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .song-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+  }
+
+  .artist-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .artist-name {
+    font-size: 0.8rem;
+  }
+}
+.floating-search {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1800%;
+  background-color: #fff;
+  /* padding: 1rem; */
+  border-radius: 8px;
+  z-index: 9999;
+}
+.grid-search{
+  width: 105%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin: 1rem;
+}
+.card {
+  margin-bottom: 1rem;
+  border: none;
+  background-color: transparent;
+}
+.right{
+  margin-left: 3rem;
+}
+p{
+  margin-bottom: 0.3rem;
+}
+.text-overlay-lanzamiento {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 0px 0px 15px 15px;
+}
+.text-overlay-genero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.icono {
+  background-color: white;
+  mask: url('icon.svg') no-repeat center;
+  -webkit-mask: url('icon.svg') no-repeat center;
+}
+.margin-perfil {
+  margin-left: 2.5rem;
+}
+.cancion-album {
+  background-color: #f3f3f3;
+  color: #000;
+  /* padding: 4vh; */
+  width: 100%;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  margin: 10px 0 10px 2rem;
+  font-weight: bolder;
+
+}
+.artista-album{
+  font-size: .8rem;
+  margin-left: 2rem;
+}
+
+
+.album-cancion {
+  background-color: #f3f3f3;
+  color: #000;
+  /* padding: 4vh; */
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.Reproducir-album-button {
+  background-color: #989898;
+  border-radius: 25px;
+  color: #fff;
+  font-size: medium;
+  /* margin: 0 2rem 0 2rem; */
+  width: 100%;
+  display: block;
+}
+.h1-album{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: .5rem;
+}
+.h2-album{
+  font-size: 1.4rem;
+}
+.album-p{
+  font-size: 1rem;
+}
+.boton-album {
+  background: none !important;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  /* float: right; */
+  
+}
+.cover-reproductor{
+    width: 80%;
+    height: 80%;
+    margin: 5% 10%;
+    border-radius: 10%;
+}
+.cover-reproductor2{
+  width: 80%;
+  height: 80%;
+  margin: 15px 10%;
+  border-radius: 10%;
+}
+.cancion p {
+  font-size: .8rem;
+  display: inline-block;
+  position: relative;
+}
+.cancion span.highlight {
+  background-color: #E0BBE4; /* Morado claro */
+  padding: 2px;
+  border-radius: 3px; /* Opcional: redondea las esquinas */
+  transition: background-color 0.3s ease; /* Suaviza la transición */
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  display: none;
+  z-index: 1000;
+}
+.subrayado {
+  display: inline-block;
+  position: absolute;
+  bottom: -2px; /* Ajusta según la posición deseada */
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  animation: subrayado 5s infinite alternate;
+}
+
+
+@keyframes subrayado {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 100%;
+  }
+  100% {
+      width: 0;
+  }
+}
